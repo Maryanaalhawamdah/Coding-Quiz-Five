@@ -4,29 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        p{
-            display: none;
-        }
-        .valid {
-            color: green;
-        }
-
-        .valid:before {
-            content: "✔";
-        }
-
-        .invalid {
-            color: red;
-        }
-
-        .invalid:before {
-            content: "✖";
-            }
-    </style>
+    <link rel="stylesheet" href="sign-up.css">
 </head>
 <body>
-    <form action="">
+  <div class="animated-background">
+   <div class="sign-up">
+    <form>
         <label for="fName">first Name</label><br/>
         <input type="text" id="fName"/><br/>
         <p id="fNameP" class="invalid"> <b>letters</b> Only (3 leters minimum)</p> 
@@ -69,9 +52,11 @@
             <option value="Javascritp">Javascritp</option>
         </select><br/>
         <p id="selectP" class="invalid"><b>invalid Selection</b></p><br/>
-        <button id="buttonID" type="submit" value="submit">Sign Up</button>
+        <button id="buttonID" type="submit" value="submit"><span>Sign Up</span></button>
     </form>
-
-    <script src="./task_1.js"></script>
+   </div>
+  </div>
 </body>
+    <script src="./task_1.js"></script>
+
 </html>

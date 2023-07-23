@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="login.css" />
     <style>
-        p{
-            display: none;
-        }
+      p {
+        display: none;
+      }
     </style>
-</head>
-<body>
-    <form>
-        <label for="email">Email</label><br/>
-        <input type="email" id="email"/><br/>
-        <p id="emailP" class="invalid"> <b>Not Found Email</b></p> 
-        <br>
-        <label for="password">Password</label><br/>
-        <input type="password" id="password"/><br/>
-        <p id="passwordP" class="invalid"> <b>Incorect Password </b></p> 
-        <br>
-        <button id="signInId" type="submit" value="submit">Sign In</button>
-        <p></p>
-    </form>
+  </head>
+  <body>
+<div class="animated-background">
+    <div class="logo-img">
+      <img src="./images/logo without BG.png" alt="logo" />
+    </div>
+    <div class="login-section">
+      <div class="img-login">
+        <img src="./images/blob (7).png" alt="login-img" />
+      </div>
+      <div class="form-login">
+        <form>
+          <label for="email">Email</label><br />
+          <input class="input-login" type="email" id="email" /><br />
+          <p id="emailP" class="invalid"><b>Not Found Email</b></p>
+          <br />
+          <label for="password">Password</label><br />
+          <input class="input-login" type="password" id="password" /><br />
+          <p id="passwordP" class="invalid"><b>Incorect Password </b></p>
+          <button id="signInId" type="submit" value="submit"><span>Sign In</span></button>
+          <p></p>
+        </form>
+      </div>
+    </div>
+</div>
     <script src="./task_2.js"></script>
-</body>
+  </body>
 </html>

@@ -122,7 +122,6 @@ password.addEventListener("keyup",function(){
         capitalPass.classList.remove("valid");
         capitalPass.classList.add("invalid");
     }
-
     var lowerCaseLetters = /(?=.*[a-z])/g;
     if(password.value.match(lowerCaseLetters)) {  
         letterPass.classList.remove("invalid");
@@ -132,7 +131,6 @@ password.addEventListener("keyup",function(){
         letterPass.classList.remove("valid");
         letterPass.classList.add("invalid");
     }
-
     var numbers = /(?=.*\d)/g;
     if(password.value.match(numbers)) {  
         numberPass.classList.remove("invalid");
@@ -142,7 +140,6 @@ password.addEventListener("keyup",function(){
         numberPass.classList.remove("valid");
         numberPass.classList.add("invalid");
     }
-
     if(password.value.length >= 8 && password.value.length<=32) {
         lengthPass.classList.remove("invalid");
         lengthPass.classList.add("valid");
@@ -150,9 +147,7 @@ password.addEventListener("keyup",function(){
     } else {
         lengthPass.classList.remove("valid");
         lengthPass.classList.add("invalid");
-    }
-    
-    if(up && lw && nm && lg){
+    }if(up && lw && nm && lg){
         passwordFlag=1;
     }
 })
@@ -167,7 +162,7 @@ confPassword.addEventListener("blur",function(){
 })
 confPassword.addEventListener("keyup",function(){
     if(password.value===confPassword.value){
-        // console.log("valid");
+        console.log("valid");
         document.getElementById("confPassP").classList.remove("invalid");
         document.getElementById("confPassP").classList.add("valid");
         confPasswordFlag=1;

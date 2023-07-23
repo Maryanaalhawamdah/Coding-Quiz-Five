@@ -5,7 +5,6 @@ let passwordField=document.getElementById("password");
 //email field
 emailField.addEventListener("focus",function(){
     document.getElementById("emailP").style.display="none";
-    // document.getElementById("passwordP").style.display="none";
 })
 
 
@@ -30,13 +29,15 @@ signInBtn.addEventListener("click",function(event){
         if(users[i]["email"]==emailField.value && users[i]["password"]!=passwordField.value){
             document.getElementById("emailP").style.display="none";
             document.getElementById("passwordP").style.display="block";
-            // console.log("error pass");
+            document.getElementById("passwordP").classListadd("invalid");
+            console.log("error pass");
             break;}
     }
     if(i==users.length){
         document.getElementById("emailP").style.display="block";
+        document.getElementById("emailP").classListadd("invalid");
         document.getElementById("passwordP").style.display="none";
-        // console.log("error email");
+        console.log("error email");
     }
     
 })
